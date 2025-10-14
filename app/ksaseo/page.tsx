@@ -36,12 +36,12 @@ export default function SaSeoPage() {
             </p>
 
             <p className="text-xl opacity-90 mb-4 max-w-3xl mx-auto leading-relaxed">
-              منصة SaaS عربية متخصصة في كتابة مقالات SEO احترافية لأي متجر إلكتروني -
+              منصة SaaS عربية متخصصة في كتابة مقالات SEO احترافية لأي <span className="font-bold text-brand-accent  px-2 py-1 rounded">متجر إلكتروني</span> - <span className="font-bold text-brand-accent px-2 py-1 rounded">موقع الكتروني {" "}</span>
               زيادة الزيارات العضوية بدون إعلانات!
             </p>
 
             <p className="text-lg opacity-80 mb-8 max-w-2xl mx-auto">
-              تعمل مع <span className="font-bold">Salla, Zid, Shopify, WooCommerce</span> وأي منصة أخرى
+              تعمل مع <span className="font-bold">Salla, Zid, Shopify, WooCommerce</span> وأي منصة أخرى او أي موقع إلكتروني
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -705,9 +705,9 @@ export default function SaSeoPage() {
 
               <div className="bg-green-600 text-white p-8 rounded-2xl text-center">
                 <div className="text-sm opacity-90 mb-2">صافي الربح السنوي</div>
-                <div className="text-6xl font-bold mb-4">1,142,780 ریال</div>
+                <div className="text-6xl font-bold mb-4">1.34M - 1.59M</div>
                 <div className="text-xl">
-                  ≈ 95,000 ریال/شهر 🚀
+                  ≈ 112,000 - 133,000 ریال/شهر 🚀
                 </div>
               </div>
             </div>
@@ -769,7 +769,7 @@ export default function SaSeoPage() {
                   </div>
                   <div className="bg-green-100 p-4 rounded-lg border border-green-400">
                     <p className="font-bold text-green-700 mb-1">الدخل المتوقع:</p>
-                    <p className="text-2xl font-bold text-green-600">30,000-90,000 ریال/سنة</p>
+                    <p className="text-2xl font-bold text-green-600">150,000-350,000 ریال/سنة</p>
                     <p className="text-xs text-gray-600 mt-1">يزيد مع نمو عدد المقالات والزيارات</p>
                   </div>
                 </div>
@@ -778,9 +778,9 @@ export default function SaSeoPage() {
               {/* Total Additional Revenue */}
               <div className="mt-6 bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-xl text-center">
                 <p className="text-sm opacity-90 mb-2">إجمالي الدخل الإضافي المتوقع</p>
-                <p className="text-4xl font-bold mb-2">80,000 - 190,000 ریال/سنة</p>
+                <p className="text-4xl font-bold mb-2">200,000 - 450,000 ریال/سنة</p>
                 <p className="text-sm opacity-90">
-                  🚀 هذا يرفع إجمالي الدخل السنوي إلى <span className="font-bold">1.58M - 1.69M ریال</span>
+                  🚀 هذا يرفع إجمالي الدخل السنوي إلى <span className="font-bold">1.7M - 1.95M ریال</span>
                 </p>
               </div>
 
@@ -839,8 +839,8 @@ export default function SaSeoPage() {
                     </div>
                     <div className="border-t pt-3">
                       <div className="text-sm text-gray-600">الدخل السنوي</div>
-                      <div className="text-2xl font-bold text-green-600">1,500,000</div>
-                      <div className="text-xs text-gray-500">ریال (500 × 3,000)</div>
+                      <div className="text-2xl font-bold text-green-600">1,700,000 - 1,950,000</div>
+                      <div className="text-xs text-gray-500">ریال (اشتراكات + إعلانات)</div>
                     </div>
 
                     {/* Year 1 Costs Breakdown */}
@@ -876,12 +876,12 @@ export default function SaSeoPage() {
 
                     <div className="bg-green-100 p-3 rounded-lg border-2 border-green-500">
                       <div className="text-sm text-gray-700">الفرق (صافي الربح)</div>
-                      <div className="text-3xl font-bold text-green-600">1,142,780</div>
+                      <div className="text-3xl font-bold text-green-600">1.34M - 1.59M</div>
                       <div className="text-xs text-green-700">ریال/سنة</div>
                     </div>
                     <div className="text-center">
                       <div className="text-sm text-gray-600">هامش الربح</div>
-                      <div className="text-2xl font-bold text-green-600">76%</div>
+                      <div className="text-2xl font-bold text-green-600">79% - 82%</div>
                     </div>
                   </div>
                 </div>
@@ -936,12 +936,12 @@ export default function SaSeoPage() {
 
                     <div className="bg-green-100 p-3 rounded-lg border-2 border-green-500">
                       <div className="text-sm text-gray-700">الفرق (صافي الربح)</div>
-                      <div className="text-3xl font-bold text-green-600">3,150,000</div>
+                      <div className="text-3xl font-bold text-green-600">3,242,780</div>
                       <div className="text-xs text-green-700">ریال/سنة</div>
                     </div>
                     <div className="text-center">
                       <div className="text-sm text-gray-600">هامش الربح</div>
-                      <div className="text-2xl font-bold text-green-600">88%</div>
+                      <div className="text-2xl font-bold text-green-600">90%</div>
                     </div>
                   </div>
                 </div>
@@ -996,12 +996,12 @@ export default function SaSeoPage() {
 
                     <div className="bg-green-100 p-3 rounded-lg border-2 border-green-500">
                       <div className="text-sm text-gray-700">الفرق (صافي الربح)</div>
-                      <div className="text-3xl font-bold text-green-600">6,900,000</div>
+                      <div className="text-3xl font-bold text-green-600">7,142,780</div>
                       <div className="text-xs text-green-700">ریال/سنة</div>
                     </div>
                     <div className="text-center">
                       <div className="text-sm text-gray-600">هامش الربح</div>
-                      <div className="text-2xl font-bold text-green-600">92%</div>
+                      <div className="text-2xl font-bold text-green-600">95%</div>
                     </div>
                   </div>
                 </div>
@@ -1010,9 +1010,9 @@ export default function SaSeoPage() {
               {/* Total 3-Year Summary */}
               <div className="mt-8 bg-gradient-to-r from-green-600 to-emerald-600 text-white p-6 rounded-2xl text-center">
                 <h4 className="text-2xl font-bold mb-4">💰 إجمالي الربح (3 سنوات)</h4>
-                <div className="text-6xl font-bold mb-2">11.1M ریال</div>
+                <div className="text-6xl font-bold mb-2">11.7M ریال</div>
                 <div className="text-xl opacity-90">
-                  1.14M + 3.15M + 6.9M = 11,192,780 ریال
+                  1.47M + 3.24M + 7.14M = 11,727,340 ریال
                 </div>
               </div>
             </div>
