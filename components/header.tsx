@@ -25,6 +25,12 @@ export function Header({ lang = "ar" }: HeaderProps) {
 
           <nav className="flex items-center gap-2 md:gap-8">
             <Link
+              href="/modonty"
+              className="text-xs md:text-base font-semibold text-gray-700 hover:text-brand-primary hover:scale-105 transition-all duration-200 px-2 md:px-3 py-2 rounded-lg hover:bg-blue-50 whitespace-nowrap"
+            >
+              Modonty
+            </Link>
+            <Link
               href="/ksaseo"
               className="text-xs md:text-base font-semibold text-gray-700 hover:text-brand-primary hover:scale-105 transition-all duration-200 px-2 md:px-3 py-2 rounded-lg hover:bg-blue-50 whitespace-nowrap"
             >
