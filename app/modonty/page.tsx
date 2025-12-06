@@ -53,7 +53,7 @@ export default function ModontyPage() {
               <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
                 <div className="text-3xl font-bold mb-1 text-brand-primary">200</div>
                 <div className="text-sm text-gray-600">هدف السنة 1</div>
-              </div>
+            </div>
               <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
                 <div className="text-3xl font-bold mb-1 text-brand-primary">4K</div>
                 <div className="text-sm text-gray-600">ریال/سنة</div>
@@ -1876,12 +1876,12 @@ export default function ModontyPage() {
                 <CardContent>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <div>
                         <span className="font-semibold text-gray-900">بناء وتقوية المدونة المركزية</span>
                         <p className="text-sm text-gray-600 mt-1">مدونة قوية تتصدر Google وتخدم جميع العملاء</p>
                       </div>
-                    </li>
+                      </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <div>
@@ -1931,12 +1931,12 @@ export default function ModontyPage() {
                 <CardContent>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                      <ArrowRight className="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" />
+                        <ArrowRight className="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" />
                       <div>
                         <span className="font-semibold text-gray-900">تعريف بمشروعك</span>
                         <p className="text-sm text-gray-600 mt-1">اسم المشروع، الخدمات، المنتجات - معلومات أساسية</p>
                       </div>
-                    </li>
+                      </li>
                     <li className="flex items-start gap-3">
                       <ArrowRight className="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" />
                       <div>
@@ -2021,6 +2021,311 @@ export default function ModontyPage() {
                 <p className="text-lg font-semibold">
                   فريق التسويق عندك يركّز على الحملات والإعلانات والعروض… ونحن نتولى بناء "الأساس" الهادئ للمحتوى في الخلفية.
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Revenue Sources */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl font-bold text-center mb-4 text-brand-primary">
+              مصادر الدخل الإضافية 💰
+            </h2>
+            <p className="text-center text-xl text-gray-600 mb-2">
+              نموذج عمل متنوع يضمن الاستدامة والنمو
+            </p>
+            <p className="text-center text-lg text-gray-700 mb-12 max-w-3xl mx-auto">
+              بالإضافة إلى الاشتراكات الأساسية، نقدم 12 مصدر دخل إضافي لتنويع الإيرادات وزيادة القيمة للعملاء
+            </p>
+
+            {/* Level 1 */}
+            <div className="mb-12">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-green-200 mb-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Badge className="bg-green-600 text-white text-lg px-4 py-1">المستوى 1</Badge>
+                  <h3 className="text-2xl font-bold text-brand-primary">مكاسب سريعة</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="border-2 border-green-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-green-700">الخدمات الإضافية</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>مقالات إضافية: <strong>500 ريال</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>تسليم عاجل: <strong>300 ريال</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>تدقيق المحتوى: <strong>1,500 ريال</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>استشارة SEO: <strong>2,000 ريال</strong></span>
+                        </li>
+                      </ul>
+                      <p className="text-xs text-green-600 font-semibold mt-3">التأثير: +20-30% إيراد لكل عميل</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-blue-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-blue-700">الميزات المميزة</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <span>دعم أولوية: <strong>500 ريال/شهر</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <span>مدير حساب مخصص: <strong>1,500 ريال/شهر</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <span>لوحة تحليلات متقدمة: <strong>300 ريال/شهر</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                          <span>وصول API: <strong>800 ريال/شهر</strong></span>
+                        </li>
+                      </ul>
+                      <p className="text-xs text-blue-600 font-semibold mt-3">التأثير: +20-30% إيراد لكل عميل</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-purple-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-purple-700">الخدمات الاستشارية</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                          <span>نقل المحتوى: <strong>3,000-5,000 ريال</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                          <span>تدقيق الموقع: <strong>2,500 ريال</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                          <span>تحليل المنافسين: <strong>2,000 ريال</strong></span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-purple-600 flex-shrink-0 mt-0.5" />
+                          <span>إعداد تقويم المحتوى: <strong>1,500 ريال</strong></span>
+                        </li>
+                      </ul>
+                      <p className="text-xs text-purple-600 font-semibold mt-3">التأثير: +10-15% إيراد</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-orange-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-orange-700">برنامج الإحالة</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                          <span><strong>المحيل:</strong> شهر مجاني أو 500 ريال رصيد</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                          <span><strong>المحال إليه:</strong> خصم 10%</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-orange-600 flex-shrink-0 mt-0.5" />
+                          <span><strong>النتيجة:</strong> عميل جديد بتكلفة أقل</span>
+                        </li>
+                      </ul>
+                      <p className="text-xs text-orange-600 font-semibold mt-3">التأثير: 20-30% من العملاء الجدد</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+
+            {/* Level 2 */}
+            <div className="mb-12">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-indigo-200 mb-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Badge className="bg-indigo-600 text-white text-lg px-4 py-1">المستوى 2</Badge>
+                  <h3 className="text-2xl font-bold text-brand-primary">متوسط المدى</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="border-2 border-indigo-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-indigo-700">سوق المحتوى</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-700 mb-3">بيع مقالات فردية لغير المشتركين (200-500 ريال لكل مقال)</p>
+                      <p className="text-xs text-indigo-600 font-semibold">الإمكانات: 50,000-100,000 ريال/شهر</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-indigo-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-indigo-700">برنامج الوكالة (White-Label)</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-700 mb-3">الوكالات تبيع Modonty تحت علامتها التجارية</p>
+                      <p className="text-xs text-indigo-600 font-semibold">الإمكانات: 100-200 عميل من خلال 5-10 وكالات</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-indigo-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-indigo-700">منتجات البيانات والرؤى</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li>• تقارير الصناعة: <strong>500 ريال</strong></li>
+                        <li>• تحليل اتجاهات المحتوى: <strong>300 ريال/شهر</strong></li>
+                        <li>• لوحة رؤى SEO: <strong>400 ريال/شهر</strong></li>
+                        <li>• ذكاء المنافسين: <strong>600 ريال/شهر</strong></li>
+                      </ul>
+                      <p className="text-xs text-indigo-600 font-semibold mt-3">الإمكانات: 20,000-50,000 ريال/شهر</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-indigo-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-indigo-700">التدريب والتعليم</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <ul className="space-y-2 text-sm text-gray-700">
+                        <li>• دورة تسويق المحتوى: <strong>1,500 ريال</strong></li>
+                        <li>• ورشة SEO: <strong>800 ريال</strong></li>
+                        <li>• ندوات شهرية: <strong>200 ريال/جلسة</strong></li>
+                        <li>• برنامج شهادة: <strong>2,500 ريال</strong></li>
+                      </ul>
+                      <p className="text-xs text-indigo-600 font-semibold mt-3">الإمكانات: 30,000-60,000 ريال/شهر</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+
+            {/* Level 3 */}
+            <div className="mb-12">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-purple-200 mb-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Badge className="bg-purple-600 text-white text-lg px-4 py-1">المستوى 3</Badge>
+                  <h3 className="text-2xl font-bold text-brand-primary">طويل المدى</h3>
+                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="border-2 border-purple-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-purple-700">منصة API والتكامل</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-700 mb-3">تكاملات مع Salla، Zid، Shopify</p>
+                      <p className="text-xs text-purple-600 font-semibold">الإمكانات: 50,000-150,000 ريال/شهر</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-purple-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-purple-700">ترخيص المحتوى</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-700 mb-3">ترخيص مكتبة المحتوى للمنصات الأخرى</p>
+                      <p className="text-xs text-purple-600 font-semibold">الإمكانات: 100,000-500,000 ريال/سنة</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-purple-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-purple-700">الامتياز/التوسع الإقليمي</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-700 mb-3">ترخيص نموذج Modonty لمناطق أخرى</p>
+                      <p className="text-xs text-purple-600 font-semibold">الإمكانات: 500,000-2 مليون ريال/سنة</p>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-2 border-purple-100">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-purple-700">بناء AI لاستخدام محتوانا</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-sm text-gray-700 mb-2">تطوير نموذج AI مدرب على محتوى Modonty لإنشاء محتوى عربي احترافي</p>
+                      <p className="text-xs text-gray-600 mb-3">بيع اشتراكات شهري/سنوي مثل ChatGPT (99-299 ريال/شهر)</p>
+                      <p className="text-xs text-purple-600 font-semibold">الإمكانات: 500,000-2 مليون ريال/سنة</p>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+
+            {/* Revenue Projections */}
+            <div className="bg-gradient-to-r from-brand-primary to-brand-accent text-white p-8 rounded-2xl shadow-xl">
+              <h3 className="text-2xl font-bold text-center mb-6">توقعات الإيراد مع المصادر الإضافية</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                  <h4 className="font-bold text-lg mb-2">السيناريو 1</h4>
+                  <p className="text-sm mb-2 opacity-90">المستوى 1 فقط (3 أشهر)</p>
+                  <p className="text-3xl font-bold">3.35M</p>
+                  <p className="text-sm opacity-90">ريال/سنة (+41%)</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                  <h4 className="font-bold text-lg mb-2">السيناريو 2</h4>
+                  <p className="text-sm mb-2 opacity-90">المستوى 1 + 2 (6 أشهر)</p>
+                  <p className="text-3xl font-bold">8.8M</p>
+                  <p className="text-sm opacity-90">ريال/سنة (+270%)</p>
+                </div>
+                <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+                  <h4 className="font-bold text-lg mb-2">السيناريو 3</h4>
+                  <p className="text-sm mb-2 opacity-90">جميع المستويات (12 شهر)</p>
+                  <p className="text-3xl font-bold">12.3M</p>
+                  <p className="text-sm opacity-90">ريال/سنة (+417%)</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Benefits */}
+            <div className="mt-12 bg-white p-8 rounded-2xl shadow-lg border-2 border-brand-primary">
+              <h3 className="text-2xl font-bold text-center mb-6 text-brand-primary">الفوائد للعملاء</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold mb-2">مرونة أكبر</h4>
+                    <p className="text-sm text-gray-700">خدمات إضافية حسب الحاجة</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold mb-2">قيمة أعلى</h4>
+                    <p className="text-sm text-gray-700">ميزات مميزة لتحسين الأداء</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold mb-2">دعم متقدم</h4>
+                    <p className="text-sm text-gray-700">استشارات وتدريب متخصص</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="h-6 w-6 text-green-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h4 className="font-bold mb-2">شبكة قوية</h4>
+                    <p className="text-sm text-gray-700">برنامج إحالة يكافئ الجميع</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
