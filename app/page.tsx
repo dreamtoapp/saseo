@@ -70,14 +70,6 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex flex-wrap gap-4 justify-center mb-12">
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6">
-                <Link href="/compare">
-                  قارن مع المنافسين
-                </Link>
-              </Button>
-            </div>
-
             {/* Key Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
               <div className="bg-white p-6 rounded-xl shadow-lg border-2 border-blue-100">

@@ -193,20 +193,6 @@ export default function PricingPage() {
       {/* Comparison Section */}
       <section id="comparison" className="container py-16 scroll-mt-20">
         <PricingComparison lang="ar" />
-
-        {/* Link to Full Comparison */}
-        <div className="text-center mt-8">
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-2 border-orange-600 text-orange-600 hover:bg-orange-50"
-            asChild
-          >
-            <Link href="/compare">
-              شاهد المقارنة الكاملة مع جميع المزايا ←
-            </Link>
-          </Button>
-        </div>
       </section>
 
       {/* Social Proof Section */}

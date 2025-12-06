@@ -1,25 +1,7 @@
-import { platformComparison, platformStats } from "@/lib/comparison-data";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, X, Sparkles, TrendingUp, Award } from "lucide-react";
-import Link from "next/link";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "مقارنة المنصات - DreamToApp vs Salla vs Zid",
-  description:
-    "قارن بين DreamToApp وسلة وزد - اكتشف لماذا DreamToApp الخيار الأفضل للتجارة الإلكترونية في السعودية",
-  keywords: [
-    "مقارنة منصات التجارة",
-    "DreamToApp vs Salla",
-    "DreamToApp vs Zid",
-    "أفضل منصة تجارة إلكترونية",
-    "السعودية",
-  ],
-};
+import { redirect } from "next/navigation";
 
 export default function ComparePage() {
+  redirect("/");
   const renderValue = (value: boolean | string) => {
     if (typeof value === "boolean") {
       return value ? (

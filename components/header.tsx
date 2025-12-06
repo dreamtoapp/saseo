@@ -36,13 +36,6 @@ export function Header({ lang = "ar" }: HeaderProps) {
             >
               saSEO
             </Link>
-            <Link
-              href="/compare"
-              className="text-xs md:text-base font-semibold text-gray-700 hover:text-brand-primary hover:scale-105 transition-all duration-200 px-2 md:px-3 py-2 rounded-lg hover:bg-blue-50 whitespace-nowrap"
-            >
-              <span className="hidden md:inline">{isArabic ? "متجر DreamToApp vs سلة وزد" : "DreamToApp vs Salla & Zid"}</span>
-              <span className="md:hidden">{isArabic ? "مقارنة" : "Compare"}</span>
-            </Link>
           </nav>
         </div>
       </div>
