@@ -12,6 +12,8 @@ import {
   FileText,
   Globe,
   ExternalLink,
+  Share2,
+  LayoutDashboard,
 } from "lucide-react";
 import Link from "next/link";
 import modontyContent from "@/lib/modonty-landing-content.json";
@@ -53,7 +55,7 @@ export default function ModontyPage() {
               <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
                 <div className="text-3xl font-bold mb-1 text-brand-primary">200</div>
                 <div className="text-sm text-gray-600">هدف السنة 1</div>
-            </div>
+              </div>
               <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
                 <div className="text-3xl font-bold mb-1 text-brand-primary">4K</div>
                 <div className="text-sm text-gray-600">ریال/سنة</div>
@@ -241,11 +243,10 @@ export default function ModontyPage() {
               {content.pricing.plans.map((plan) => (
                 <Card
                   key={plan.id}
-                  className={`bg-white shadow-xl border-2 ${
-                    plan.popular
+                  className={`bg-white shadow-xl border-2 ${plan.popular
                       ? "border-brand-primary scale-105"
                       : "border-gray-200"
-                  }`}
+                    }`}
                 >
                   {plan.popular && (
                     <div className="bg-brand-primary text-white text-center py-2 text-sm font-bold">
@@ -453,9 +454,9 @@ export default function ModontyPage() {
                 <div className="text-lg font-semibold mb-2">مليار دولار</div>
                 <div className="text-sm text-gray-600 mb-3">الاقتصاد الرقمي السعودي 2024</div>
                 <div className="text-xs text-gray-500">(15% من الناتج المحلي الإجمالي)</div>
-                <Link 
-                  href="https://sharikatmubasher.com/news/article/21481808/حجم-الاقتصاد-الرقمي-السعودي-يسجل-495-مليار-دولار-بنهاية-2024" 
-                  target="_blank" 
+                <Link
+                  href="https://sharikatmubasher.com/news/article/21481808/حجم-الاقتصاد-الرقمي-السعودي-يسجل-495-مليار-دولار-بنهاية-2024"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline flex items-center justify-center gap-1 text-xs mt-2"
                 >
@@ -470,9 +471,9 @@ export default function ModontyPage() {
                 <div className="text-sm text-gray-600 mb-1">سوق الإعلانات الرقمية 2024</div>
                 <div className="text-xs text-gray-500 mb-1">→ $23.1 مليار (2030)</div>
                 <div className="text-xs text-green-600 font-semibold mb-3">نمو سنوي 17.1%</div>
-                <Link 
-                  href="https://maaal.com/archives/202505/8-9-مليار-دولار-سوق-الإعلانات-الرقمية-في/" 
-                  target="_blank" 
+                <Link
+                  href="https://maaal.com/archives/202505/8-9-مليار-دولار-سوق-الإعلانات-الرقمية-في/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline flex items-center justify-center gap-1 text-xs mt-2"
                 >
@@ -485,9 +486,9 @@ export default function ModontyPage() {
                 <div className="text-4xl font-bold text-green-600 mb-2">$4.3-5.3</div>
                 <div className="text-lg font-semibold mb-2">مليار دولار</div>
                 <div className="text-sm text-gray-600 mb-3">سوق المحتوى الرقمي (2030)</div>
-                <Link 
-                  href="https://aawsat.com/home/article/3114021/نمو-سوق-المحتوى-الرقمي-السعودي-إلى-53-مليار-دولار-في-2030" 
-                  target="_blank" 
+                <Link
+                  href="https://aawsat.com/home/article/3114021/نمو-سوق-المحتوى-الرقمي-السعودي-إلى-53-مليار-دولار-في-2030"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline flex items-center justify-center gap-1 text-xs mt-2"
                 >
@@ -502,9 +503,9 @@ export default function ModontyPage() {
                 <div className="text-4xl font-bold text-indigo-600 mb-2">4-10.1</div>
                 <div className="text-lg font-semibold mb-2">مليار ريال</div>
                 <div className="text-sm text-gray-600 mb-3">سوق خدمات السيو سنوياً</div>
-                <Link 
-                  href="https://umg.digital/أفضل-10-شركات-سيو-في-السعودية/" 
-                  target="_blank" 
+                <Link
+                  href="https://umg.digital/أفضل-10-شركات-سيو-في-السعودية/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline flex items-center justify-center gap-1 text-xs mt-2"
                 >
@@ -524,9 +525,9 @@ export default function ModontyPage() {
                 <div className="text-4xl font-bold text-teal-600 mb-2">98%+</div>
                 <div className="text-lg font-semibold mb-2">نسبة استخدام الإنترنت</div>
                 <div className="text-sm text-gray-600 mb-3">في المملكة العربية السعودية</div>
-                <Link 
-                  href="https://www.rs4it.sa/أهم-استراتيجيات-السيو/" 
-                  target="_blank" 
+                <Link
+                  href="https://www.rs4it.sa/أهم-استراتيجيات-السيو/"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 hover:underline flex items-center justify-center gap-1 text-xs mt-2"
                 >
@@ -545,9 +546,9 @@ export default function ModontyPage() {
                     <span className="text-lg font-bold text-blue-600">$1.22B</span>
                   </div>
                   <p className="text-sm text-gray-600">سوق الإعلانات الرقمية (2025)</p>
-                  <Link 
-                    href="https://www.mubasher.info/news/4393394/كم-سيبلغ-حجم-قطاع-الإعلانات-الرقمية-الإماراتي-في-2025/" 
-                    target="_blank" 
+                  <Link
+                    href="https://www.mubasher.info/news/4393394/كم-سيبلغ-حجم-قطاع-الإعلانات-الرقمية-الإماراتي-في-2025/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline flex items-center gap-1 text-xs mt-2"
                   >
@@ -561,9 +562,9 @@ export default function ModontyPage() {
                     <span className="text-lg font-bold text-green-600">$151B</span>
                   </div>
                   <p className="text-sm text-gray-600">عوائد محتملة من التحول الرقمي</p>
-                  <Link 
-                    href="https://www.erembusiness.com/economy/fqjg7a9" 
-                    target="_blank" 
+                  <Link
+                    href="https://www.erembusiness.com/economy/fqjg7a9"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 hover:underline flex items-center gap-1 text-xs mt-2"
                   >
@@ -630,9 +631,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">الاقتصاد الرقمي السعودي:</span>
-                    <Link 
-                      href="https://sharikatmubasher.com/news/article/21481808/حجم-الاقتصاد-الرقمي-السعودي-يسجل-495-مليار-دولار-بنهاية-2024" 
-                      target="_blank" 
+                    <Link
+                      href="https://sharikatmubasher.com/news/article/21481808/حجم-الاقتصاد-الرقمي-السعودي-يسجل-495-مليار-دولار-بنهاية-2024"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -645,9 +646,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">سوق الإعلانات الرقمية:</span>
-                    <Link 
-                      href="https://maaal.com/archives/202505/8-9-مليار-دولار-سوق-الإعلانات-الرقمية-في/" 
-                      target="_blank" 
+                    <Link
+                      href="https://maaal.com/archives/202505/8-9-مليار-دولار-سوق-الإعلانات-الرقمية-في/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -660,9 +661,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">سوق المحتوى الرقمي:</span>
-                    <Link 
-                      href="https://aawsat.com/home/article/3114021/نمو-سوق-المحتوى-الرقمي-السعودي-إلى-53-مليار-دولار-في-2030" 
-                      target="_blank" 
+                    <Link
+                      href="https://aawsat.com/home/article/3114021/نمو-سوق-المحتوى-الرقمي-السعودي-إلى-53-مليار-دولار-في-2030"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -675,9 +676,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">سوق خدمات السيو:</span>
-                    <Link 
-                      href="https://umg.digital/أفضل-10-شركات-سيو-في-السعودية/" 
-                      target="_blank" 
+                    <Link
+                      href="https://umg.digital/أفضل-10-شركات-سيو-في-السعودية/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -690,9 +691,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">نسبة استخدام الإنترنت:</span>
-                    <Link 
-                      href="https://www.rs4it.sa/أهم-استراتيجيات-السيو/" 
-                      target="_blank" 
+                    <Link
+                      href="https://www.rs4it.sa/أهم-استراتيجيات-السيو/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -705,9 +706,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">سوق الإعلانات الرقمية - الإمارات:</span>
-                    <Link 
-                      href="https://www.mubasher.info/news/4393394/كم-سيبلغ-حجم-قطاع-الإعلانات-الرقمية-الإماراتي-في-2025/" 
-                      target="_blank" 
+                    <Link
+                      href="https://www.mubasher.info/news/4393394/كم-سيبلغ-حجم-قطاع-الإعلانات-الرقمية-الإماراتي-في-2025/"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -720,9 +721,9 @@ export default function ModontyPage() {
                   <ExternalLink className="h-4 w-4 text-gray-500 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-semibold text-gray-700">التحول الرقمي في دول الخليج:</span>
-                    <Link 
-                      href="https://www.erembusiness.com/economy/fqjg7a9" 
-                      target="_blank" 
+                    <Link
+                      href="https://www.erembusiness.com/economy/fqjg7a9"
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:underline mr-2"
                     >
@@ -1266,7 +1267,7 @@ export default function ModontyPage() {
             {/* Revenue Projections */}
             <div className="bg-white rounded-2xl shadow-xl border-2 border-brand-primary p-8 mb-8">
               <h3 className="text-2xl font-bold text-brand-primary mb-6 text-center">التوقعات المالية - سيناريوهات النمو</h3>
-              
+
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead>
@@ -1748,8 +1749,78 @@ export default function ModontyPage() {
                     5
                   </div>
                   <div className="flex-1">
+                    <h4 className="font-bold text-lg mb-2">نشر على منصات التواصل الاجتماعي</h4>
+                    <p className="text-gray-700 mb-2">ننشر كل مقال على منصات التواصل الاجتماعي (Twitter/X، LinkedIn، Facebook) لزيادة الوصول والتفاعل</p>
+                    <div className="bg-purple-50 p-3 rounded-lg mt-2 border-r-4 border-purple-500">
+                      <p className="text-sm text-gray-700 font-semibold mb-1">ما نقدمه في النشر:</p>
+                      <ul className="text-xs text-gray-600 space-y-1 mr-4">
+                        <li>• نشر احترافي على منصات متعددة</li>
+                        <li>• محتوى مخصص لكل منصة (Twitter، LinkedIn، Facebook)</li>
+                        <li>• Hashtags استراتيجية لزيادة الوصول</li>
+                        <li>• متابعة التفاعل والرد على التعليقات</li>
+                      </ul>
+                    </div>
+                    <div className="bg-blue-50 p-3 rounded-lg mt-3 border-r-4 border-blue-500">
+                      <p className="text-sm text-gray-700 font-semibold mb-2">الفرق بين الباقات:</p>
+                      <ul className="text-xs text-gray-600 space-y-1 mr-4">
+                        <li className="flex items-start gap-2">
+                          <Badge className="bg-green-600 text-white text-xs">جميع الباقات</Badge>
+                          <span>نشر على حسابات Modonty الرسمية</span>
+                        </li>
+                        <li className="flex items-start gap-2 mt-2">
+                          <Badge className="bg-brand-accent text-white text-xs">Premium فقط</Badge>
+                          <span>نشر إضافي على حساباتك الخاصة (Twitter، LinkedIn، Facebook) - محتوى مخصص لحساباتك</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                    6
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-lg mb-2">إضافة Meta Pixel لمقالاتك <Badge className="bg-green-600 text-white text-xs mr-2">جميع الباقات</Badge></h4>
+                    <p className="text-gray-700 mb-2">نضيف Meta Pixel (Facebook Pixel) لمقالاتك لتتبع الزوار وإنشاء Lookalike Audiences لحملاتك الإعلانية</p>
+                    <div className="bg-blue-50 p-3 rounded-lg mt-2 border-r-4 border-blue-500">
+                      <p className="text-sm text-gray-700 font-semibold mb-1">كيف يساعدك Meta Pixel:</p>
+                      <ul className="text-xs text-gray-600 space-y-1 mr-4">
+                        <li>• تتبع زوار المقالات في Facebook و Instagram</li>
+                        <li>• إنشاء Lookalike Audiences بناءً على زوار المقالات</li>
+                        <li>• تحسين استهداف حملاتك الإعلانية</li>
+                        <li>• قياس أداء المقالات في منصات Meta</li>
+                      </ul>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2">✓ هذه الميزة متاحة لجميع الباقات - كل مقال يحصل على Meta Pixel تلقائياً</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                    7
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-bold text-lg mb-2">لوحة تحكم (Dashboard) مخصصة لك <Badge className="bg-green-600 text-white text-xs mr-2">جميع الباقات</Badge></h4>
+                    <p className="text-gray-700 mb-2">كل عميل يحصل على لوحة تحكم خاصة به لتتبع جميع النتائج في مكان واحد</p>
+                    <div className="bg-purple-50 p-3 rounded-lg mt-2 border-r-4 border-purple-500">
+                      <p className="text-sm text-gray-700 font-semibold mb-1">ما يمكنك تتبعه في Dashboard:</p>
+                      <ul className="text-xs text-gray-600 space-y-1 mr-4">
+                        <li>• جميع المقالات المنشورة وتواريخ النشر</li>
+                        <li>• الزيارات من Google Analytics و Meta Pixel</li>
+                        <li>• أداء المقالات على منصات التواصل الاجتماعي</li>
+                        <li>• إحصائيات التفاعل والوصول</li>
+                        <li>• تقارير شهرية مفصلة</li>
+                      </ul>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2">✓ هذه الميزة متاحة لجميع الباقات - تتبع شامل لجميع النتائج</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold flex-shrink-0">
+                    8
+                  </div>
+                  <div className="flex-1">
                     <h4 className="font-bold text-lg mb-2">النتائج تظهر في حسابك</h4>
-                    <p className="text-gray-700">ترى الزيارات من المقالات في Google Analytics الخاص بك - شفافية كاملة</p>
+                    <p className="text-gray-700">ترى الزيارات من المقالات ومنصات التواصل في Google Analytics و Meta Pixel الخاص بك - شفافية كاملة في Dashboard المخصص</p>
                   </div>
                 </div>
               </div>
@@ -1758,7 +1829,7 @@ export default function ModontyPage() {
             {/* Backlink Strategy Section */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-lg border-2 border-brand-primary mb-8">
               <h3 className="text-2xl font-bold text-brand-primary mb-6 text-center">استراتيجية الروابط الخارجية - كيف نعمل كخبراء SEO</h3>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <Card className="bg-white shadow-md">
                   <CardHeader>
@@ -1876,12 +1947,12 @@ export default function ModontyPage() {
                 <CardContent>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <div>
                         <span className="font-semibold text-gray-900">بناء وتقوية المدونة المركزية</span>
                         <p className="text-sm text-gray-600 mt-1">مدونة قوية تتصدر Google وتخدم جميع العملاء</p>
                       </div>
-                      </li>
+                    </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <div>
@@ -1906,8 +1977,67 @@ export default function ModontyPage() {
                     <li className="flex items-start gap-3">
                       <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                       <div>
+                        <span className="font-semibold text-gray-900">نشر على منصات التواصل الاجتماعي</span>
+                        <p className="text-sm text-gray-600 mt-1">
+                          <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge> نشر على حسابات Modonty الرسمية |
+                          <Badge className="bg-brand-accent text-white text-xs mr-1 ml-1">Premium</Badge> نشر إضافي على حساباتك الخاصة (Twitter، LinkedIn، Facebook) - محتوى مخصص لحساباتك
+                        </p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">إضافة Meta Pixel لمقالاتك <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">نضيف Meta Pixel (Facebook Pixel) تلقائياً لمقالاتك لتتبع الزوار وإنشاء Lookalike Audiences لحملاتك الإعلانية على Facebook و Instagram - تساعدك في استهداف جمهور مشابه لزوار المقالات</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">لوحة تحكم (Dashboard) مخصصة <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">كل عميل يحصل على لوحة تحكم خاصة به لتتبع جميع النتائج: المقالات المنشورة، الزيارات من Google Analytics، أداء Meta Pixel، إحصائيات منصات التواصل الاجتماعي، وكل البيانات في مكان واحد</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
                         <span className="font-semibold text-gray-900">إعداد GTM للتتبع</span>
-                        <p className="text-sm text-gray-600 mt-1">تتبع الزيارات من المقالات في حسابك</p>
+                        <p className="text-sm text-gray-600 mt-1">تتبع الزيارات من المقالات ومنصات التواصل في Google Analytics الخاص بك - شفافية كاملة في النتائج</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">تطبيق Mobile App <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">تطبيق جوال مخصص لمتابعة مقالاتك وأدائها - إشعارات فورية عند نشر مقال جديد، متابعة الأداء من الهاتف، وإرسال طلبات مواضيع جديدة بسهولة</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">تقويم المحتوى (Content Calendar) <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">تقويم مرئي يوضح تواريخ نشر جميع مقالاتك القادمة - رؤية خطة المحتوى لـ 18 شهر مسبقاً، جدولة المحتوى، وتنظيم أفضل لاستراتيجيتك</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">إشعارات Email تلقائية <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">إشعارات فورية عند نشر مقال جديد، تقارير شهرية تلقائية عن الأداء، وتنبيهات عند تحسن الترتيب أو زيادة الزيارات - ابق على اطلاع دائماً</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">تحليل أداء المحتوى المتقدم <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">تحليل مفصل لأداء كل مقال منفرداً - أفضل المقالات أداءً، تتبع الكلمات المفتاحية، مقارنة الأداء بين المقالات، ورؤى قابلة للتنفيذ لتحسين النتائج</p>
+                      </div>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <div>
+                        <span className="font-semibold text-gray-900">مكتبة المحتوى (Content Library) <Badge className="bg-green-600 text-white text-xs mr-1">جميع الباقات</Badge></span>
+                        <p className="text-sm text-gray-600 mt-1">الوصول لجميع مقالاتك السابقة في مكان واحد - بحث وفلترة سريعة، تحميل المقالات، ومتابعة تاريخ المحتوى المنشور</p>
                       </div>
                     </li>
                     <li className="flex items-start gap-3">
@@ -1931,12 +2061,12 @@ export default function ModontyPage() {
                 <CardContent>
                   <ul className="space-y-4">
                     <li className="flex items-start gap-3">
-                        <ArrowRight className="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" />
+                      <ArrowRight className="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" />
                       <div>
                         <span className="font-semibold text-gray-900">تعريف بمشروعك</span>
                         <p className="text-sm text-gray-600 mt-1">اسم المشروع، الخدمات، المنتجات - معلومات أساسية</p>
                       </div>
-                      </li>
+                    </li>
                     <li className="flex items-start gap-3">
                       <ArrowRight className="h-5 w-5 text-brand-primary flex-shrink-0 mt-0.5" />
                       <div>
@@ -1968,6 +2098,60 @@ export default function ModontyPage() {
                   </ul>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* Premium Additional Features */}
+            <div className="bg-gradient-to-br from-brand-accent/10 to-purple-50 p-8 rounded-2xl shadow-lg border-2 border-brand-accent mb-8">
+              <div className="flex items-center justify-center gap-2 mb-6">
+                <Badge className="bg-brand-accent text-white text-lg px-4 py-1">Premium فقط</Badge>
+                <h3 className="text-2xl font-bold text-brand-primary">ميزات إضافية حصرية في باقة Premium</h3>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="bg-white shadow-md border-2 border-brand-accent">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-brand-primary">🔄 تحديث المحتوى القديم (Content Refresh)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700">تحديث المقالات القديمة لتحسين ترتيبها في Google - إضافة معلومات جديدة، تحسين SEO، وإعادة النشر لزيادة الزيارات</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white shadow-md border-2 border-brand-accent">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-brand-primary">💡 اقتراحات المواضيع (Content Suggestions)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700">اقتراحات ذكية لمواضيع جديدة بناءً على اتجاهات السوق، تحليل المنافسين، وكلمات مفتاحية جديدة - نوفر لك أفكار محتوى مستمرة</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white shadow-md border-2 border-brand-accent">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-brand-primary">📊 تتبع ترتيب الكلمات المفتاحية (Keyword Ranking)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700">تتبع ترتيب كلماتك المفتاحية في Google - رؤية التقدم في الترتيب، تنبيهات عند تحسن الترتيب، وتحليل أداء الكلمات المفتاحية</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white shadow-md border-2 border-brand-accent">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-brand-primary">✅ موافقة العميل قبل النشر (Content Approval)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700">إرسال المقال للمراجعة والموافقة قبل النشر - مراجعة المحتوى، طلب تعديلات، والموافقة النهائية قبل النشر</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="bg-white shadow-md border-2 border-brand-accent">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-brand-primary">🔗 تكامل مع CMS (WordPress, Shopify, etc.)</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-sm text-gray-700">رفع المقال تلقائياً لموقعك - تكامل مباشر مع WordPress، Shopify، Salla، Zid - لا حاجة لرفع يدوي</p>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
 
             {/* Result Summary */}
