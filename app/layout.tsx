@@ -21,6 +21,7 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://jrbseo.com"),
   title: "الخطة الذكية لتجارتك الإلكترونية",
   description:
     "منصة تجارة إلكترونية ذكية بأسعار تنافسية ومزايا فريدة: إدارة السائقين، مراقبة صحة المتجر، وإدارة المناوبات. ابدأ مجاناً!",
