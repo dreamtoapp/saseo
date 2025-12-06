@@ -21,24 +21,36 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "DreamToApp - الخطة الذكية لتجارتك الإلكترونية",
+  title: "الخطة الذكية لتجارتك الإلكترونية",
   description:
     "منصة تجارة إلكترونية ذكية بأسعار تنافسية ومزايا فريدة: إدارة السائقين، مراقبة صحة المتجر، وإدارة المناوبات. ابدأ مجاناً!",
   keywords: [
     "تجارة إلكترونية",
     "منصة متاجر",
-    "DreamToApp",
     "متجر إلكتروني",
     "السعودية",
     "سلة",
     "زد",
   ],
+  icons: {
+    icon: "/logo1.webp",
+    shortcut: "/logo1.webp",
+    apple: "/logo1.webp",
+  },
   openGraph: {
-    title: "DreamToApp - الخطة الذكية لتجارتك الإلكترونية",
+    title: "الخطة الذكية لتجارتك الإلكترونية",
     description:
       "وفّر حتى 100 ريال شهرياً واحصل على مزايا فريدة لن تجدها في المنصات الأخرى",
     type: "website",
     locale: "ar_SA",
+    images: [
+      {
+        url: "/logo1.webp",
+        width: 1200,
+        height: 630,
+        alt: "Logo",
+      },
+    ],
   },
 };
 

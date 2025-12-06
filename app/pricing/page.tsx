@@ -139,12 +139,12 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Why Choose DreamToApp */}
+      {/* Why Choose */}
       <section className="container py-16">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              لماذا DreamToApp؟
+              لماذا نحن؟
             </h2>
             <p className="text-xl text-muted-foreground">
               لأننا نفهم احتياجات التجار السعوديين
@@ -210,7 +210,7 @@ export default function PricingPage() {
               انضم إلى مئات التجار الناجحين
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              &quot;DreamToApp ساعدتنا نوفر على تكاليف الشحن بفضل نظام إدارة السائقين.
+              &quot;ساعدتنا نوفر على تكاليف الشحن بفضل نظام إدارة السائقين.
               الآن نتحكم بالتوصيل ونحسن تجربة العملاء!&quot;
             </p>
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">

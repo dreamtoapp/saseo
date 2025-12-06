@@ -386,8 +386,8 @@ export default function SaSeoPage() {
             <div className="grid md:grid-cols-4 gap-6">
               <div className="bg-gray-50 p-6 rounded-xl text-center border-2 border-transparent hover:border-brand-primary transition-colors">
                 <ShoppingCart className="h-12 w-12 mx-auto mb-3 text-brand-primary" />
-                <h3 className="font-bold mb-1">DreamToApp</h3>
-                <p className="text-sm text-gray-600">منصتنا</p>
+                <h3 className="font-bold mb-1">منصتنا</h3>
+                <p className="text-sm text-gray-600">منصة التجارة الإلكترونية</p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-xl text-center border-2 border-transparent hover:border-brand-primary transition-colors">

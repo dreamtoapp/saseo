@@ -14,8 +14,8 @@ export function PricingComparison({ lang = "ar" }: ComparisonProps) {
       <CardHeader>
         <CardTitle className="text-center text-2xl md:text-3xl">
           {isArabic
-            ? "لماذا DreamToApp؟ قارن بنفسك"
-            : "Why DreamToApp? Compare Yourself"}
+            ? "قارن بنفسك"
+            : "Compare Yourself"}
         </CardTitle>
         <p className="text-center text-muted-foreground mt-2">
           {isArabic
@@ -33,7 +33,7 @@ export function PricingComparison({ lang = "ar" }: ComparisonProps) {
                 </th>
                 <th className="p-3 text-center">
                   <div className="flex flex-col items-center gap-1">
-                    <span className="font-bold text-orange-600">DreamToApp</span>
+                    <span className="font-bold text-orange-600">نحن</span>
                     <Badge className="bg-orange-100 text-orange-700 text-xs">
                       {isArabic ? "أنت هنا" : "You're here"}
                     </Badge>
@@ -204,8 +204,8 @@ export function PricingComparison({ lang = "ar" }: ComparisonProps) {
         <div className="mt-6 p-4 bg-gradient-to-r from-orange-50 to-pink-50 rounded-lg border border-orange-200">
           <p className="text-center font-semibold text-orange-900">
             {isArabic
-              ? "✨ نفس المزايا الأساسية + 3 مزايا فريدة + أسعار أفضل = DreamToApp"
-              : "✨ Same core features + 3 unique advantages + Better prices = DreamToApp"}
+              ? "✨ نفس المزايا الأساسية + 3 مزايا فريدة + أسعار أفضل"
+              : "✨ Same core features + 3 unique advantages + Better prices"}
           </p>
         </div>
       </CardContent>
