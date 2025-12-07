@@ -25,63 +25,217 @@ const content = modontyContent as LandingContent;
 export default function Home() {
   return (
     <div className="min-h-screen" dir="rtl">
-      {/* Hero Section */}
+      {/* Section 1: Hero Section */}
       <section id="hero" className="relative overflow-hidden bg-blue-50 py-20">
         <div className="container">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge className="mb-6 text-lg px-6 py-2 bg-brand-primary text-white">
-              {content.hero.badge}
-            </Badge>
-
-            <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              {content.hero.title}
-            </h1>
-
-            <p className="text-xl md:text-2xl text-gray-700 mb-6 leading-relaxed">
-              {content.hero.subtitle}
-            </p>
-
-            <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              {content.hero.description}
-            </p>
-
-            <div className="mb-8">
-              <p className="text-2xl font-bold text-brand-primary mb-4">
-                {content.hero.tagline}
-              </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                01
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Hero Section</span>
             </div>
 
-            {/* Key Metrics */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mt-12">
-              <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
-                <div className="text-3xl font-bold mb-1 text-brand-primary">200</div>
-                <div className="text-sm text-gray-600">هدف السنة 1</div>
+            {/* Main Heading */}
+            <div className="text-center mb-12">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                {content.hero.title}
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed max-w-4xl mx-auto">
+                {content.hero.subtitle}
+              </p>
+              <div className="mt-6">
+                <p className="text-2xl font-bold text-brand-primary">
+                  {content.hero.tagline}
+                </p>
               </div>
-              <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
-                <div className="text-3xl font-bold mb-1 text-brand-primary">4K</div>
-                <div className="text-sm text-gray-600">ریال/سنة</div>
+            </div>
+
+            {/* Core Concept: Authority Blog Model */}
+            <div className="bg-white rounded-2xl shadow-xl p-8 mb-8 border-2 border-brand-primary/20">
+              <div className="text-center mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
+                  كيف يعمل نظام Modonty الفريد؟
+                </h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  نحن لا نبيع "مقالات" فقط... نحن نبني <span className="font-bold text-brand-primary">منظومة محتوى ذكية</span> تخدمك وتقويك في نفس الوقت
+                </p>
               </div>
-              <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
-                <div className="text-3xl font-bold mb-1 text-brand-primary">800K</div>
-                <div className="text-sm text-gray-600">دخل متوقع</div>
+
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                {/* Master Article Card */}
+                <Card className="bg-blue-50 border-2 border-blue-200 shadow-lg">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold">
+                        1
+                      </div>
+                      <CardTitle className="text-xl text-blue-700">مقال رئيسي في مدونة Modonty</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-4 leading-relaxed">
+                      نكتب مقال احترافي طويل وعميق بالعربية، منشور في <span className="font-bold text-blue-700">مدونة Modonty المركزية القوية</span> التي تتصدر نتائج البحث في Google.
+                    </p>
+                    <div className="bg-white/60 p-3 rounded-lg">
+                      <p className="text-sm text-gray-700 font-semibold mb-2">ما يحدث:</p>
+                      <ul className="space-y-1 text-sm text-gray-600">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>المقال يذكر شركتك أو متجرك داخل النص</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>روابط استراتيجية لموقعك من مدونة قوية</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>المدونة تكبر وتقوى مع كل مقال جديد</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Customized Version Card */}
+                <Card className="bg-green-50 border-2 border-green-200 shadow-lg">
+                  <CardHeader>
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-12 h-12 rounded-full bg-green-600 text-white flex items-center justify-center text-xl font-bold">
+                        2
+                      </div>
+                      <CardTitle className="text-xl text-green-700">نسخة مخصصة جاهزة لموقعك</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 mb-4 leading-relaxed">
+                      نفس الفكرة، لكن <span className="font-bold text-green-700">مكتوبة خصيصاً لمشروعك</span> - مذكور فيها اسمك، خدماتك، منتجاتك.
+                    </p>
+                    <div className="bg-white/60 p-3 rounded-lg">
+                      <p className="text-sm text-gray-700 font-semibold mb-2">ما تحصل عليه:</p>
+                      <ul className="space-y-1 text-sm text-gray-600">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>مقال جاهز للنشر مباشرة في موقعك</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>محتوى مخصص 100% لمشروعك</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>بدون تعديلات أو جهد إضافي</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
-              <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
-                <div className="text-3xl font-bold mb-1 text-brand-primary">50</div>
-                <div className="text-sm text-gray-600">نقطة التعادل</div>
+
+              {/* Core Value Proposition */}
+              <div className="mt-8 bg-brand-primary text-white p-6 rounded-xl">
+                <div className="text-center">
+                  <p className="text-lg font-semibold mb-2">الفكرة الأساسية:</p>
+                  <p className="text-xl font-bold">
+                    كل مقال يقوّي المدونة المركزية ← المدونة تقوّي موقعك ← موقعك يكسب حضور حقيقي في Google
+                  </p>
+                  <p className="text-sm mt-3 opacity-90">
+                    نظام ذكي يبني قيمة تراكمية - كل شهر تصير أقوى من الشهر اللي قبله
+                  </p>
+                </div>
               </div>
-              <div className="bg-white/80 backdrop-blur p-4 rounded-xl border border-brand-primary/20">
-                <div className="text-3xl font-bold mb-1 text-brand-primary">18</div>
-                <div className="text-sm text-gray-600">شهر محتوى</div>
+            </div>
+
+            {/* Key Benefits Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+              <Card className="bg-white shadow-lg border-2 border-brand-primary/30">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-3">📅</div>
+                  <h3 className="font-bold text-lg mb-2 text-brand-primary">18 شهر محتوى</h3>
+                  <p className="text-sm text-gray-600">
+                    تدفع 12 شهر وتحصل على <span className="font-bold text-brand-primary">18 شهر</span> - لأن النتائج تحتاج وقت
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white shadow-lg border-2 border-green-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-3">📊</div>
+                  <h3 className="font-bold text-lg mb-2 text-green-700">شفافية كاملة</h3>
+                  <p className="text-sm text-gray-600">
+                    ترى النتائج في <span className="font-bold text-green-700">Google Analytics</span> و GTM - أرقام حقيقية، مش وعود
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white shadow-lg border-2 border-purple-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-3">🚫</div>
+                  <h3 className="font-bold text-lg mb-2 text-purple-700">بدون تعقيد SEO</h3>
+                  <p className="text-sm text-gray-600">
+                    لا تحتاج تفهم SEO أو مصطلحات تقنية - <span className="font-bold text-purple-700">نحن نتولى كل شيء</span>
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white shadow-lg border-2 border-orange-300">
+                <CardContent className="p-6 text-center">
+                  <div className="text-4xl mb-3">💰</div>
+                  <h3 className="font-bold text-lg mb-2 text-orange-700">توفير 90%</h3>
+                  <p className="text-sm text-gray-600">
+                    بدل 36K-96K ريال/سنة لوكالة، <span className="font-bold text-orange-700">2.5K-10K ريال فقط</span>
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Enhanced Metrics with Context */}
+            <div className="bg-white rounded-2xl shadow-xl p-6 border-2 border-brand-primary/20">
+              <h3 className="text-xl font-bold text-center mb-6 text-gray-900">
+                أهدافنا ونتائجنا المتوقعة
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div className="bg-blue-50 p-4 rounded-xl border-2 border-blue-300 text-center">
+                  <div className="text-3xl font-bold mb-1 text-brand-primary">500</div>
+                  <div className="text-sm font-semibold text-gray-700 mb-1">هدف السنة 1</div>
+                  <div className="text-xs text-gray-600">عدد العملاء المستهدفين</div>
+                </div>
+                <div className="bg-green-50 p-4 rounded-xl border-2 border-green-300 text-center">
+                  <div className="text-3xl font-bold mb-1 text-green-700">4K</div>
+                  <div className="text-sm font-semibold text-gray-700 mb-1">ريال/سنة</div>
+                  <div className="text-xs text-gray-600">متوسط الإيراد للعميل</div>
+                </div>
+                <div className="bg-purple-50 p-4 rounded-xl border-2 border-purple-300 text-center">
+                  <div className="text-3xl font-bold mb-1 text-purple-700">2.4M</div>
+                  <div className="text-sm font-semibold text-gray-700 mb-1">ريال</div>
+                  <div className="text-xs text-gray-600">الدخل السنوي المتوقع</div>
+                </div>
+                <div className="bg-orange-50 p-4 rounded-xl border-2 border-orange-300 text-center">
+                  <div className="text-3xl font-bold mb-1 text-orange-700">50</div>
+                  <div className="text-sm font-semibold text-gray-700 mb-1">عميل</div>
+                  <div className="text-xs text-gray-600">نقطة التعادل (4-6 أشهر)</div>
+                </div>
+                <div className="bg-indigo-50 p-4 rounded-xl border-2 border-indigo-300 text-center">
+                  <div className="text-3xl font-bold mb-1 text-indigo-700">18</div>
+                  <div className="text-sm font-semibold text-gray-700 mb-1">شهر</div>
+                  <div className="text-xs text-gray-600">محتوى مستمر لكل عميل</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What is Modonty */}
+      {/* Section 2: What is Modonty */}
       <section id="what-is" className="py-16 bg-white scroll-mt-20">
         <div className="container">
           <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                02
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">What is Modonty</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-6">
               {content.whatIsModonty.title}
             </h2>
@@ -108,10 +262,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
+      {/* Section 3: How It Works */}
       <section id="how-it-works" className="py-16 bg-gray-50 scroll-mt-20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                03
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">How It Works</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-4">
               {content.howItWorks.title}
             </h2>
@@ -160,10 +320,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Value Proposition */}
+      {/* Section 4: Value Proposition (Why Different) */}
       <section id="why-different" className="py-16 bg-white scroll-mt-20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                04
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Value Proposition</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-12">
               {content.valueProposition.title}
             </h2>
@@ -186,10 +352,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Target Audience */}
+      {/* Section 5: Target Audience */}
       <section id="target-audience" className="py-16 bg-blue-50 scroll-mt-20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                05
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Target Audience</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-6">
               {content.targetAudience.title}
             </h2>
@@ -224,184 +396,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section id="pricing" className="py-16 bg-white scroll-mt-20">
-        <div className="container">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-4">
-              {content.pricing.title}
-            </h2>
-            <p className="text-center text-xl text-gray-600 mb-4">
-              {content.pricing.description}
-            </p>
-            <div className="text-center mb-12">
-              <Badge className="text-lg px-6 py-2 bg-green-600 text-white">
-                {content.pricing.offer}
-              </Badge>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {content.pricing.plans.map((plan) => (
-                <Card
-                  key={plan.id}
-                  className={`bg-white shadow-xl border-2 ${plan.popular
-                      ? "border-brand-primary scale-105"
-                      : "border-gray-200"
-                    }`}
-                >
-                  {plan.popular && (
-                    <div className="bg-brand-primary text-white text-center py-2 text-sm font-bold">
-                      الأكثر طلباً
-                    </div>
-                  )}
-                  <CardHeader>
-                    <CardTitle className="text-2xl mb-2">{plan.nameAr}</CardTitle>
-                    <div className="mb-4">
-                      <div className="text-4xl font-bold text-brand-primary mb-2">
-                        {plan.priceAr}
-                        <span className="text-lg font-normal text-gray-600">
-                          {" "}
-                          {plan.currency}
-                        </span>
-                      </div>
-                      <p className="text-gray-600 text-sm">{plan.durationAr}</p>
-                    </div>
-                    <div className="text-center py-2 bg-blue-50 rounded-lg">
-                      <span className="font-bold text-brand-primary">
-                        {plan.articlesPerMonth} مقال شهريًا
-                      </span>
-                    </div>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-3">
-                      {plan.features.map((feature, index) => (
-                        <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
-                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ROI Comparison */}
-      <section id="roi-comparison" className="py-16 bg-white scroll-mt-20">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-brand-primary">
-              مقارنة التكلفة والعائد 💰
-            </h2>
-
-            <div className="overflow-x-auto">
-              <table className="w-full">
-                <thead>
-                  <tr className="bg-brand-primary text-white">
-                    <th className="p-4 text-right">الطريقة</th>
-                    <th className="p-4 text-center">التكلفة الشهرية</th>
-                    <th className="p-4 text-center">التكلفة السنوية</th>
-                    <th className="p-4 text-center">مدة العقد</th>
-                    <th className="p-4 text-center">النتائج</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b bg-red-50">
-                    <td className="p-4 font-bold">وكالة محتوى تقليدية</td>
-                    <td className="p-4 text-center text-red-600 font-bold">3,000-8,000 ريال</td>
-                    <td className="p-4 text-center text-red-600 font-bold">36,000-96,000 ريال</td>
-                    <td className="p-4 text-center">12 شهر</td>
-                    <td className="p-4 text-center">بعد 6-12 شهر</td>
-                  </tr>
-                  <tr className="border-b bg-orange-50">
-                    <td className="p-4 font-bold">توظيف كاتب محتوى</td>
-                    <td className="p-4 text-center text-orange-600 font-bold">4,000+ ريال</td>
-                    <td className="p-4 text-center text-orange-600 font-bold">48,000+ ريال</td>
-                    <td className="p-4 text-center">دائم</td>
-                    <td className="p-4 text-center">بطيء + إدارة</td>
-                  </tr>
-                  <tr className="border-b bg-green-50">
-                    <td className="p-4 font-bold text-brand-primary">Modonty</td>
-                    <td className="p-4 text-center text-green-600 font-bold">208-833 ريال</td>
-                    <td className="p-4 text-center text-green-600 font-bold">2,499-9,999 ريال</td>
-                    <td className="p-4 text-center text-green-600">18 شهر (بدون التزام)</td>
-                    <td className="p-4 text-center text-green-600">3-6 أشهر</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <div className="mt-8 text-center bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-xl border-2 border-green-400">
-              <p className="text-3xl font-bold text-brand-primary mb-4">
-                💡 وفّر حتى 90% من تكاليف المحتوى سنوياً!
-              </p>
-
-              <div className="grid md:grid-cols-3 gap-6 mt-6">
-                <div className="bg-white p-4 rounded-lg shadow-lg">
-                  <div className="text-sm text-gray-600 mb-2">الوكالة التقليدية</div>
-                  <div className="text-2xl font-bold text-red-600">36K-96K ريال/سنة</div>
-                  <div className="text-xs text-gray-500 mt-1">تكلفة عالية جداً!</div>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-lg">
-                  <div className="text-sm text-gray-600 mb-2">كاتب محتوى</div>
-                  <div className="text-2xl font-bold text-orange-600">48K+ ريال/سنة</div>
-                  <div className="text-xs text-gray-500 mt-1">+ رواتب + تأمينات</div>
-                </div>
-                <div className="bg-green-100 p-4 rounded-lg shadow-lg border-2 border-green-500">
-                  <div className="text-sm text-gray-600 mb-2">Modonty</div>
-                  <div className="text-2xl font-bold text-green-600">2.5K-10K ريال/سنة</div>
-                  <div className="text-xs text-green-700 mt-1">✅ أرخص بـ 90%!</div>
-                </div>
-              </div>
-
-              <div className="mt-6 bg-white p-4 rounded-lg border border-green-300">
-                <p className="text-gray-700 font-medium">
-                  بدون التزامات طويلة، بدون تكاليف خفية، بنتائج قابلة للقياس عبر GTM
-                </p>
-                <p className="text-green-600 font-bold mt-2">
-                  🎯 توفير يصل إلى 86,000 ريال سنوياً مقارنة بالوكالات!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Why Strong */}
-      <section id="why-strong" className="py-16 bg-gray-50 scroll-mt-20">
-        <div className="container">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12">
-              {content.whyStrong.title}
-            </h2>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {content.whyStrong.points.map((point, index) => (
-                <Card key={index} className="bg-white shadow-lg border-2 border-blue-100">
-                  <CardHeader>
-                    <CardTitle className="text-lg text-brand-primary">
-                      {point.title}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-700 text-sm leading-relaxed">
-                      {point.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Challenges Solved */}
+      {/* Section 6: Challenges Solved */}
       <section id="challenges" className="py-16 bg-white scroll-mt-20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                06
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Challenges Solved</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-6">
               {content.challengesSolved.title}
             </h2>
@@ -438,10 +442,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Market Opportunity */}
+      {/* Section 7: Why Strong */}
+      <section id="why-strong" className="py-16 bg-gray-50 scroll-mt-20">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                07
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Why Strong</span>
+            </div>
+            <h2 className="text-4xl font-bold text-center mb-12">
+              {content.whyStrong.title}
+            </h2>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {content.whyStrong.points.map((point, index) => (
+                <Card key={index} className="bg-white shadow-lg border-2 border-blue-100">
+                  <CardHeader>
+                    <CardTitle className="text-lg text-brand-primary">
+                      {point.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 text-sm leading-relaxed">
+                      {point.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 8: Market Opportunity */}
       <section id="market-opportunity" className="py-16 bg-white scroll-mt-20">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                08
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Market Opportunity</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-4 text-brand-primary">
               حجم السوق والفرصة 🌍
             </h2>
@@ -742,10 +786,174 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Timeline to Launch */}
+      {/* Section 9: Pricing */}
+      <section id="pricing" className="py-16 bg-white scroll-mt-20">
+        <div className="container">
+          <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                09
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Pricing</span>
+            </div>
+            <h2 className="text-4xl font-bold text-center mb-4">
+              {content.pricing.title}
+            </h2>
+            <p className="text-center text-xl text-gray-600 mb-4">
+              {content.pricing.description}
+            </p>
+            <div className="text-center mb-12">
+              <Badge className="text-lg px-6 py-2 bg-green-600 text-white">
+                {content.pricing.offer}
+              </Badge>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {content.pricing.plans.map((plan) => (
+                <Card
+                  key={plan.id}
+                  className={`bg-white shadow-xl border-2 ${plan.popular
+                    ? "border-brand-primary scale-105"
+                    : "border-gray-200"
+                    }`}
+                >
+                  {plan.popular && (
+                    <div className="bg-brand-primary text-white text-center py-2 text-sm font-bold">
+                      الأكثر طلباً
+                    </div>
+                  )}
+                  <CardHeader>
+                    <CardTitle className="text-2xl mb-2">{plan.nameAr}</CardTitle>
+                    <div className="mb-4">
+                      <div className="text-4xl font-bold text-brand-primary mb-2">
+                        {plan.priceAr}
+                        <span className="text-lg font-normal text-gray-600">
+                          {" "}
+                          {plan.currency}
+                        </span>
+                      </div>
+                      <p className="text-gray-600 text-sm">{plan.durationAr}</p>
+                    </div>
+                    <div className="text-center py-2 bg-blue-50 rounded-lg">
+                      <span className="font-bold text-brand-primary">
+                        {plan.articlesPerMonth} مقال شهريًا
+                      </span>
+                    </div>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {plan.features.map((feature, index) => (
+                        <li key={index} className="flex items-start gap-2 text-sm text-gray-700">
+                          <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 10: ROI Comparison */}
+      <section id="roi-comparison" className="py-16 bg-white scroll-mt-20">
+        <div className="container">
+          <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                10
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">ROI Comparison</span>
+            </div>
+            <h2 className="text-4xl font-bold text-center mb-12 text-brand-primary">
+              مقارنة التكلفة والعائد 💰
+            </h2>
+
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="bg-brand-primary text-white">
+                    <th className="p-4 text-right">الطريقة</th>
+                    <th className="p-4 text-center">التكلفة الشهرية</th>
+                    <th className="p-4 text-center">التكلفة السنوية</th>
+                    <th className="p-4 text-center">مدة العقد</th>
+                    <th className="p-4 text-center">النتائج</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b bg-red-50">
+                    <td className="p-4 font-bold">وكالة محتوى تقليدية</td>
+                    <td className="p-4 text-center text-red-600 font-bold">3,000-8,000 ريال</td>
+                    <td className="p-4 text-center text-red-600 font-bold">36,000-96,000 ريال</td>
+                    <td className="p-4 text-center">12 شهر</td>
+                    <td className="p-4 text-center">بعد 6-12 شهر</td>
+                  </tr>
+                  <tr className="border-b bg-orange-50">
+                    <td className="p-4 font-bold">توظيف كاتب محتوى</td>
+                    <td className="p-4 text-center text-orange-600 font-bold">4,000+ ريال</td>
+                    <td className="p-4 text-center text-orange-600 font-bold">48,000+ ريال</td>
+                    <td className="p-4 text-center">دائم</td>
+                    <td className="p-4 text-center">بطيء + إدارة</td>
+                  </tr>
+                  <tr className="border-b bg-green-50">
+                    <td className="p-4 font-bold text-brand-primary">Modonty</td>
+                    <td className="p-4 text-center text-green-600 font-bold">208-833 ريال</td>
+                    <td className="p-4 text-center text-green-600 font-bold">2,499-9,999 ريال</td>
+                    <td className="p-4 text-center text-green-600">18 شهر (بدون التزام)</td>
+                    <td className="p-4 text-center text-green-600">3-6 أشهر</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="mt-8 text-center bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-xl border-2 border-green-400">
+              <p className="text-3xl font-bold text-brand-primary mb-4">
+                💡 وفّر حتى 90% من تكاليف المحتوى سنوياً!
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6 mt-6">
+                <div className="bg-white p-4 rounded-lg shadow-lg">
+                  <div className="text-sm text-gray-600 mb-2">الوكالة التقليدية</div>
+                  <div className="text-2xl font-bold text-red-600">36K-96K ريال/سنة</div>
+                  <div className="text-xs text-gray-500 mt-1">تكلفة عالية جداً!</div>
+                </div>
+                <div className="bg-white p-4 rounded-lg shadow-lg">
+                  <div className="text-sm text-gray-600 mb-2">كاتب محتوى</div>
+                  <div className="text-2xl font-bold text-orange-600">48K+ ريال/سنة</div>
+                  <div className="text-xs text-gray-500 mt-1">+ رواتب + تأمينات</div>
+                </div>
+                <div className="bg-green-100 p-4 rounded-lg shadow-lg border-2 border-green-500">
+                  <div className="text-sm text-gray-600 mb-2">Modonty</div>
+                  <div className="text-2xl font-bold text-green-600">2.5K-10K ريال/سنة</div>
+                  <div className="text-xs text-green-700 mt-1">✅ أرخص بـ 90%!</div>
+                </div>
+              </div>
+
+              <div className="mt-6 bg-white p-4 rounded-lg border border-green-300">
+                <p className="text-gray-700 font-medium">
+                  بدون التزامات طويلة، بدون تكاليف خفية، بنتائج قابلة للقياس عبر GTM
+                </p>
+                <p className="text-green-600 font-bold mt-2">
+                  🎯 توفير يصل إلى 86,000 ريال سنوياً مقارنة بالوكالات!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 11: Timeline to Launch */}
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                11
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Timeline to Launch</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-12 text-brand-primary">
               خطة الإطلاق ⏱️
             </h2>
@@ -812,10 +1020,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Available Positions */}
+      {/* Section 12: Available Positions (Team Structure) */}
       <section className="py-16 bg-white">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                12
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Team Structure</span>
+            </div>
             <div className="text-center mb-12">
               <Badge className="mb-4 text-lg px-6 py-2 bg-brand-primary text-white">
                 هيكل الفريق
@@ -1226,10 +1440,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Financial KPIs & Metrics */}
+      {/* Section 13: Financial KPIs & Metrics */}
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                13
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Financial KPIs</span>
+            </div>
             <div className="text-center mb-12">
               <Badge className="mb-4 text-lg px-6 py-2 bg-brand-primary text-white">
                 التحليل المالي الشامل
@@ -1541,10 +1761,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Cost Breakdown Summary */}
+      {/* Section 14: Cost Breakdown Summary */}
       <section className="py-16 bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                14
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Cost Breakdown</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-4 text-brand-primary">
               التكاليف التشغيلية 💵
             </h2>
@@ -1590,10 +1816,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Competitive Advantages */}
+      {/* Section 15: Competitive Advantages */}
       <section className="py-16 bg-gray-50">
         <div className="container">
           <div className="max-w-5xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                15
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Competitive Advantages</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-12 text-brand-primary">
               المزايا التنافسية 🏆
             </h2>
@@ -1633,10 +1865,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Future Expansion */}
+      {/* Section 16: Future Expansion */}
       <section className="py-16 bg-white">
         <div className="container">
           <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                16
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Future Expansion</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-4 text-brand-primary">
               خطة التوسع المستقبلية 🌍
             </h2>
@@ -1679,10 +1917,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Collaboration */}
+      {/* Section 17: Collaboration */}
       <section className="py-16 bg-blue-50">
         <div className="container">
           <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                17
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Collaboration</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-6">
               {content.collaboration.title}
             </h2>
@@ -2212,10 +2456,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Additional Revenue Sources */}
+      {/* Section 18: Additional Revenue Sources */}
       <section className="py-16 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="container">
           <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                18
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Additional Revenue</span>
+            </div>
             <h2 className="text-4xl font-bold text-center mb-4 text-brand-primary">
               مصادر الدخل الإضافية 💰
             </h2>
@@ -2517,10 +2767,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 3-Domain Workflow Explanation */}
+      {/* Section 19: 3-Domain Workflow Explanation */}
       <section id="workflow" className="py-16 bg-gradient-to-br from-gray-50 to-blue-50 scroll-mt-20">
         <div className="container">
           <div className="max-w-6xl mx-auto">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-fuchsia-600 text-white font-bold text-lg shadow-lg ring-2 ring-fuchsia-300">
+                19
+              </div>
+              <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">3-Domain Workflow</span>
+            </div>
             <div className="text-center mb-12">
               <Badge className="mb-4 text-lg px-6 py-2 bg-brand-primary text-white">
                 كيف نعمل
